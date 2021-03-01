@@ -32,7 +32,7 @@ if account_add != ['']:
 #自定义url?
 redirect_uri=os.getenv('REDIRECT_URI')
 if redirect_uri =='':
-    redirect_uri = r'https://login.microsoftonline.com/common/oauth2/nativeclient'  
+    redirect_uri = r'http://localhost:53682/'  
 #其他配置生成   
 other_config=os.getenv('OTHER_CONFIG')
 if os.getenv('OTHER_CONFIG') =='':
