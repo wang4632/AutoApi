@@ -34,7 +34,7 @@ log_list=['']*app_count
 config = {
          'allstart': 0,
          'rounds': 1,
-         'rounds_delay': [0,0,5],
+         'rounds_delay': [1,0,5],
          'api_delay': [0,0,5],
          'app_delay': [0,0,5],
          }
@@ -291,13 +291,13 @@ for _ in range(1,config['rounds']+1):
         timeDelay('app_delay')    
         print('账号 '+str(a+1))    
         #生成随机名称
-        filesname='QAQ'+str(random.randint(1,600))+r'.xlsx'
+        filesname='QAQ'+str(random.randint(1,400))+r'.xlsx'
         #新建随机xlsx文件
         xls = xlsxwriter.Workbook(filesname)
         xlssheet = xls.add_worksheet()
         for s1 in range(0,4):
             for s2 in range(0,4):
-                xlssheet.write(s1,s2,str(random.randint(1,600)))
+                xlssheet.write(s1,s2,str(random.randint(1,400)))
         xls.close()
         xlspath=sys.path[0]+r'/'+filesname
         print('上传文件')
