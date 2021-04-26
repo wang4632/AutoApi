@@ -3,7 +3,7 @@ import os
 import xlsxwriter
 import requests as req
 import json,sys,random
-Import time
+import time
 
 if os.getenv('ACCOUNT')== '' or os.getenv('OTHER_CONFIG') == '':
     print("<<<<<<<<<<<<<配置初始化中>>>>>>>>>>>>>")
